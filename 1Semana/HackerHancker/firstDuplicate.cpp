@@ -50,5 +50,11 @@ duplicado cuja segunda ocorrência tem o menor índice.
 Em outras palavras, se houver mais de um número duplicado, retorne aquele cuja segunda ocorrência aparece 
 antes (isto é, com o índice menor) que a segunda ocorrência dos outros números.
 Se não houver nenhum elemento duplicado, retorne -1.
+
+Primeira Solução: 1) 
+N^2 0
+Segunda solução:
+N N
+
 */
 
