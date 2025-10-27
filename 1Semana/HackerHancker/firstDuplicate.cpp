@@ -1,27 +1,20 @@
 #include <iostream>
+#include <set>
 
 using namespace std;
 
 int firstDuplicateSolucao(vector<int> v) //V Vector da solução
 {
-    int menor_segundo_indice = -1; // Exemplo da variável X
-    for(int i = 0; i < v.size(); i++)
+    set<int> ja_apareceu; //N LogN ou (unordered_set == set) O(n) (ordena os valores)
+    for(int i=0; i < v.size(); i++)
     {
-        for(int j = i + 1; j < v.size(); j++)// Até o tamanho do vetor v.size()
+        if(ja_apareceu.count(v[i]))
         {
-            if(v[i] == v[j])// verifica se os valores são iguais
-            {
-                if(menor_segundo_indice == -1 || j < menor_segundo_indice)
-                {
-                    menor_segundo_indice = j; // j é o segundo index
-                }
-            }
+            return v[i];
         }
+        ja_apareceu.insert(v[i]);
     }
-    if(menor_segundo_indice == 000-1)
-    return -1;
-    else
-    return v[menor_segundo_indice];
+        return -1;
 }
 
 int main()
