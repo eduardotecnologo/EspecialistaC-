@@ -3,14 +3,21 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "UFrmPrincipal.h"
+#include "UFrmModeloCadastro.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TFrmModeloCadastro *FrmModeloCadastro;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner)
+__fastcall TFrmModeloCadastro::TFrmModeloCadastro(TComponent* Owner)
+	: TForm(Owner)
 {
 
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmModeloCadastro::EvFecharFomularioClose(TObject *Sender,
+	TCloseAction &Action)
+{
+   Action = caFree;
 }
 //---------------------------------------------------------------------------

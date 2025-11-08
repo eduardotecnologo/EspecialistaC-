@@ -4,23 +4,36 @@
 #pragma hdrstop
 
 #include "UFrmPrincipal.h"
+#include "UFrmCadVendedor.h"
+#include "UFrmCadFabricante.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TFrmPrincipal *FrmPrincipal;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner)
+__fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner) : TForm(Owner)
 {
 
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::EvEncerrarSistemaClick(TObject *Sender)
+void __fastcall TFrmPrincipal::EvEncerrarSistemaClick(TObject *Sender)
 {
     Close();
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::Sair1Click(TObject *Sender)
+void __fastcall TFrmPrincipal::Sair1Click(TObject *Sender)
 {
    Close();
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmPrincipal::EvAtivarCadVendedorClick(TObject *Sender)
+{
+   new TFrmCadVendedor(this);
+}
+//---------------------------------------------------------------------------
+void __fastcall TFrmPrincipal::EvAtivarCadFabricanteClick(TObject *Sender)
+{
+	new TFrmCadFabricante(this);
+}
+//---------------------------------------------------------------------------
+

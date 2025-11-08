@@ -1,4 +1,4 @@
-object Form1: TForm1
+object FrmPrincipal: TFrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Sistema Distribuidora de Bebidas e Lanches'
@@ -21,9 +21,11 @@ object Form1: TForm1
       Caption = 'Cadastro'
       object Condutor1: TMenuItem
         Caption = 'Vendedor...'
+        OnClick = EvAtivarCadVendedorClick
       end
       object Fabricante1: TMenuItem
         Caption = 'Fabricante...'
+        OnClick = EvAtivarCadFabricanteClick
       end
       object LinhadeProduto1: TMenuItem
         Caption = 'Linha de Produto...'

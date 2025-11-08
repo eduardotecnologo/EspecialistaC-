@@ -9,7 +9,7 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.Menus.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TFrmPrincipal : public TForm
 {
 __published:	// IDE-managed Components
 	TMainMenu *mnmPrincipal;
@@ -30,11 +30,13 @@ __published:	// IDE-managed Components
 	TMenuItem *Quantidade1;
 	void __fastcall EvEncerrarSistemaClick(TObject *Sender);
 	void __fastcall Sair1Click(TObject *Sender);
+	void __fastcall EvAtivarCadVendedorClick(TObject *Sender);
+	void __fastcall EvAtivarCadFabricanteClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm1(TComponent* Owner);
+	__fastcall TFrmPrincipal(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TFrmPrincipal *FrmPrincipal;
 //---------------------------------------------------------------------------
 #endif
