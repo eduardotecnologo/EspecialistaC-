@@ -12,8 +12,7 @@ int Soma(int a, int b)
     return a + b;
 }
 
-int EhPar(int n)
+int EhPar(int a, int b)
 {
-    // Implementação mínima pasa pssar os testes atuais
-    return (n % 2 == 0) ? 1 : 0;
+    return a + b;
 }

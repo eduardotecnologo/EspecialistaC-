@@ -35,18 +35,24 @@ void TestaSoma_ComNegativos()
     AssertIgual(5,Soma(2,3), "Soma_DoisComMenosTresIgualMenosUm");
 }
 
-//void TestaEhPar()
-//{
-//  	AssertIgual(1, EhPar(4), "EhPar_QuatroEhPar");
-//    AssertIgual(0, EhPar(5), "EhPar_CincoNaoEhPar");
-//}
+void TestaEhPar()
+{
+  	AssertIgual(1, EhPar(4), "EhPar_QuatroEhPar");
+    AssertIgual(0, EhPar(5), "EhPar_CincoNaoEhPar");
+
+    // Testes adicionais
+    AssertIgual(1, EhPar(0),  "EhPar_ZeroEhpar");
+    AssertIgual(1, EhPar(-2), "EhPar_MenosDoisEhpar");
+    AssertIgual(1, EhPar(-3), "EhPar_MenosTresNaoEhpar");
+
+}
 
 int main(int, char**)
 {
   std::cout << "Rodando testes...\n";
   TestaSoma_Basico();
   TestaSoma_ComNegativos();
-  //TestaEhPar();
+  TestaEhPar();
 
   std::cout << "Fim dos testes.\n";
 

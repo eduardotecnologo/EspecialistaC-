@@ -27,7 +27,7 @@ void AssertIgual(int esperado, int obtido, const char* nomeTeste)
 void TestaSoma_Basico()
 {
     //AssertIgual(5, Soma(3,2), "TestaSoma_Basico");
-    AssertIgual(5,Soma(2,3), "Soma_DoisMaisTresIgualCinco");
+    AssertIgual(5,Soma(2,4), "Soma_DoisMaisTresIgualCinco");
 }
 
 void TestaSoma_ComNegativos()
@@ -39,12 +39,21 @@ void TestaEhPar()
 {
   	AssertIgual(1, EhPar(4), "EhPar_QuatroEhPar");
     AssertIgual(0, EhPar(5), "EhPar_CincoNaoEhPar");
+
+    // Testes adicionais
+    AssertIgual(1, EhPar(0),  "EhPar_ZeroEhpar");
+    AssertIgual(1, EhPar(-2), "EhPar_MenosDoisEhpar");
+    AssertIgual(0, EhPar(-3), "EhPar_MenosTresNaoEhpar");
+
 }
 
 int main(int, char**)
 {
   std::cout << "Rodando testes...\n";
   TestaSoma_Basico();
+  TestaSoma_ComNegativos();
+  TestaEhPar();
+
   std::cout << "Fim dos testes.\n";
 
   std::cout << "Pressione ENTER para sair..." << std::endl;
