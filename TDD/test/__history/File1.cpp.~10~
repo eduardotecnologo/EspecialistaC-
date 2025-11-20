@@ -1,0 +1,35 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "File1.h"
+#include "MathUtils.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+void AssertIgual(int esperado, int obtido, const char* nomeTeste)
+{
+   if(esperado != obtido)
+   {
+     std::cout << "[FALHOU] " << nomeTeste
+               << " | esperado: " << esperado
+               << " obtido: " << obtido << std::endl;
+   }
+   else
+   {
+     std::cout << " [OK]    " << nomeTeste << std::endl;
+   }
+}
+
+void TestaSoma_Basico()
+{
+    AssertIgual(5, Soma(3,2, "TestaSoma_Basico"))
+}
+
+int main(int, char**)
+{
+  std::cout << "Rodando testes...\n";
+  TestaSoma_Basico();
+  std::cout << "Fim dos testes.\n";
+  return 0;
+}
