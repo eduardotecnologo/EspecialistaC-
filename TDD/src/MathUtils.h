@@ -4,6 +4,7 @@
 #define MathUtilsH
 //---------------------------------------------------------------------------
 int Soma(int a, int b);
+int EhPar(int a, int b);
 
 #endif
 

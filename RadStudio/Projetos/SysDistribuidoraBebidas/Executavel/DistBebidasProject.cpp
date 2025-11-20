@@ -4,10 +4,11 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("..\Fonte\UFrmPrincipal.cpp", FrmPrincipal);
-USEFORM("..\Fonte\UFrmModeloCadastro.cpp", FrmModeloCadastro);
 USEFORM("..\Fonte\UFrmCadVendedor.cpp", FrmCadVendedor);
+USEFORM("..\Fonte\UFrmModeloCadastro.cpp", FrmModeloCadastro);
+USEFORM("..\Fonte\UFrmPrincipal.cpp", FrmPrincipal);
 USEFORM("UFrmCadFabricante.cpp", FrmCadastroFabricante);
+USEFORM("..\Fonte\UFrmCadLinhaProduto.cpp", FrmCadLinhaProduto);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {

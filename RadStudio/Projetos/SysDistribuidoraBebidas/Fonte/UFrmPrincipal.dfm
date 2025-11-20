@@ -29,6 +29,7 @@ object FrmPrincipal: TFrmPrincipal
       end
       object LinhadeProduto1: TMenuItem
         Caption = 'Linha de Produto...'
+        OnClick = EvAtivarCadLinhaProdutoClick
       end
       object N1: TMenuItem
         Caption = '-'

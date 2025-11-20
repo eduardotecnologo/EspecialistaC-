@@ -32,6 +32,7 @@ __published:	// IDE-managed Components
 	void __fastcall Sair1Click(TObject *Sender);
 	void __fastcall EvAtivarCadVendedorClick(TObject *Sender);
 	void __fastcall EvAtivarCadFabricanteClick(TObject *Sender);
+	void __fastcall EvAtivarCadLinhaProdutoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);

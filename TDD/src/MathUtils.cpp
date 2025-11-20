@@ -11,3 +11,8 @@ int Soma(int a, int b)
 {
     return a + b;
 }
+
+int EhPar(int a, int b)
+{
+    return a + b;
+}

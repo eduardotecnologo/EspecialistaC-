@@ -196,6 +196,12 @@
             <DependentOn>UFrmCadFabricante.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
+        <CppCompile Include="..\Fonte\UFrmCadLinhaProduto.cpp">
+            <Form>FrmCadLinhaProduto</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>..\Fonte\UFrmCadLinhaProduto.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
         <CppCompile Include="..\Fonte\UFrmCadVendedor.cpp">
             <Form>FrmCadVendedor</Form>
             <FormType>dfm</FormType>
@@ -214,10 +220,11 @@
             <DependentOn>..\Fonte\UFrmPrincipal.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
-        <FormResources Include="..\Fonte\UFrmPrincipal.dfm"/>
-        <FormResources Include="..\Fonte\UFrmModeloCadastro.dfm"/>
         <FormResources Include="..\Fonte\UFrmCadVendedor.dfm"/>
+        <FormResources Include="..\Fonte\UFrmModeloCadastro.dfm"/>
+        <FormResources Include="..\Fonte\UFrmPrincipal.dfm"/>
         <FormResources Include="UFrmCadFabricante.dfm"/>
+        <FormResources Include="..\Fonte\UFrmCadLinhaProduto.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

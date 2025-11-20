@@ -1,0 +1,5 @@
+inherited FrmModeloCadastro1: TFrmModeloCadastro1
+  Caption = 'FrmModeloCadastro1'
+  StyleElements = [seFont, seClient, seBorder]
+  TextHeight = 15
+end

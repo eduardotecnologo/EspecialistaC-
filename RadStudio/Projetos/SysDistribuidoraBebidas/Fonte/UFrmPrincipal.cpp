@@ -6,6 +6,7 @@
 #include "UFrmPrincipal.h"
 #include "UFrmCadVendedor.h"
 #include "UFrmCadFabricante.h"
+#include "UFrmCadLinhaProduto.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -18,7 +19,7 @@ __fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner) : TForm(Owner)
 //---------------------------------------------------------------------------
 void __fastcall TFrmPrincipal::EvEncerrarSistemaClick(TObject *Sender)
 {
-    Close();
+   Close();
 }
 //---------------------------------------------------------------------------
 void __fastcall TFrmPrincipal::Sair1Click(TObject *Sender)
@@ -28,12 +29,18 @@ void __fastcall TFrmPrincipal::Sair1Click(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TFrmPrincipal::EvAtivarCadVendedorClick(TObject *Sender)
 {
-   new TFrmCadVendedor(this);
+    new TFrmCadVendedor(this);
 }
 //---------------------------------------------------------------------------
 void __fastcall TFrmPrincipal::EvAtivarCadFabricanteClick(TObject *Sender)
 {
 	new TFrmCadFabricante(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAtivarCadLinhaProdutoClick(TObject *Sender)
+{
+    new TFrmCadLinhaProduto(this);
 }
 //---------------------------------------------------------------------------
 

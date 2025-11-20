@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "UFrmCadLinhaPropduto.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma link "UFrmModeloCadastro"
+#pragma resource "*.dfm"
+TFrmModeloCadastro1 *FrmModeloCadastro1;
+//---------------------------------------------------------------------------
+__fastcall TFrmModeloCadastro1::TFrmModeloCadastro1(TComponent* Owner)
+	: TFrmModeloCadastro(Owner)
+{
+}
+//---------------------------------------------------------------------------
