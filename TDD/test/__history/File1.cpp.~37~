@@ -14,13 +14,13 @@ void AssertIgual(int esperado, int obtido, const char* nomeTeste)
 {
    if(esperado != obtido)
    {
-     std::cout << "[FALHOU] " << nomeTeste
+     cout << "[FALHOU] " << nomeTeste
                << " | esperado: " << esperado
-               << " obtido: " << obtido << std::endl;
+               << " obtido: " << obtido << endl;
    }
    else
    {
-     std::cout << " [OK]    " << nomeTeste << std::endl;
+     cout << " [OK]    " << nomeTeste << endl;
    }
 }
 
@@ -35,18 +35,38 @@ void TestaSoma_ComNegativos()
     AssertIgual(5,Soma(2,3), "Soma_DoisComMenosTresIgualMenosUm");
 }
 
-//void TestaEhPar()
-//{
-//  	AssertIgual(1, EhPar(4), "EhPar_QuatroEhPar");
-//    AssertIgual(0, EhPar(5), "EhPar_CincoNaoEhPar");
-//}
+void TestaEhPar()
+{
+  	AssertIgual(1, EhPar(4), "EhPar_QuatroEhPar");
+    AssertIgual(0, EhPar(5), "EhPar_CincoNaoEhPar");
+
+    // Testes adicionais
+    AssertIgual(1, EhPar(0),  "EhPar_ZeroEhpar");
+    AssertIgual(1, EhPar(-2), "EhPar_MenosDoisEhpar");
+    AssertIgual(1, EhPar(-3), "EhPar_MenosTresNaoEhpar");
+
+}
+
+void AssertIgualBool(bool esperado, bool obtido, const char* nomeTeste)
+{
+    if(esperado != obtido)
+    {
+      cout << "[FALHOU] "     << nomeTeste
+           << " | esperado: " << esperado
+           << " obtido "      << obtido << endl;
+    }
+    else
+    {
+      cout << "[OK] "         << nomeTeste << endl;
+    }
+}
 
 int main(int, char**)
 {
-  std::cout << "Rodando testes...\n";
+  cout << "Rodando testes...\n";
   TestaSoma_Basico();
   TestaSoma_ComNegativos();
-  //TestaEhPar();
+  TestaEhPar();
 
   std::cout << "Fim dos testes.\n";
 

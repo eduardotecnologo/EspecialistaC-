@@ -15,5 +15,5 @@ int Soma(int a, int b)
 int EhPar(int n)
 {
     // Implementação mínima pasa pssar os testes atuais
-    return (n % 2) == 0;
+    return (n % 2 == 0) ? 1 : 0;
 }

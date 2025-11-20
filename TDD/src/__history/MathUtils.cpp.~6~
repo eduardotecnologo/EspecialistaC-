@@ -1,0 +1,21 @@
+//---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "MathUtils.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+
+
+int Soma(int a, int b)
+{
+    return a + b;
+}
+
+void TestaEhPar() {
+    AssertIgualBool(true,  EhPar(4),  "EhPar_QuatroEhPar");
+    AssertIgualBool(false, EhPar(5),  "EhPar_CincoNaoEhPar");
+    AssertIgualBool(true,  EhPar(0),  "EhPar_ZeroEhPar");
+    AssertIgualBool(true,  EhPar(-2), "EhPar_MenosDoisEhPar");
+    AssertIgualBool(false, EhPar(-3), "EhPar_MenosTresNaoEhPar");
+}

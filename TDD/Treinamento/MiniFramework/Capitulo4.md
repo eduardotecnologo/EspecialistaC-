@@ -198,4 +198,155 @@ Agora que os testes validam o comportamento, podemos melhorar o código sem medo
 4.6.1 Mudando o tipo de retorno para bool
 Em vez de retornar int (1/0), vamos usar um tipo mais expressivo: bool.
 
-Atualizar a declaração em MathUtils.h:
+1. Atualizar a declaração em MathUtils.h:
+
+#ifndef MATHUTILS_H
+#define MATHUTILS_H
+
+int Soma(int a, int b);
+bool EhPar(int n);    // agora retorna bool
+
+#endif
+
+2. Atualizar a implementação em MathUtils.cpp:
+#include "MathUtils.h"
+
+int Soma(int a, int b) {
+    return a + b;
+}
+
+bool EhPar(int n) {
+    return (n % 2) == 0;
+}
+
+3. Ajustar os testes em File1.cpp.
+Criamos uma asserção específica para bool:
+
+void AssertIgualBool(bool esperado, bool obtido, const char* nomeTeste) {
+    if (esperado != obtido) {
+        std::cout << "[FALHOU] " << nomeTeste
+                  << " | esperado: " << esperado
+                  << " obtido: "   << obtido << std::endl;
+    } else {
+        std::cout << "[OK]      " << nomeTeste << std::endl;
+    }
+}
+
+E reescrevemos TestaEhPar():
+void TestaEhPar() {
+    AssertIgualBool(true,  EhPar(4),  "EhPar_QuatroEhPar");
+    AssertIgualBool(false, EhPar(5),  "EhPar_CincoNaoEhPar");
+    AssertIgualBool(true,  EhPar(0),  "EhPar_ZeroEhPar");
+    AssertIgualBool(true,  EhPar(-2), "EhPar_MenosDoisEhPar");
+    AssertIgualBool(false, EhPar(-3), "EhPar_MenosTresNaoEhPar");
+}
+
+Dica: você pode manter a AssertIgual(int, int, ...) para outros testes e usar AssertIgualBool apenas onde fizer sentido.
+
+4. Compilar e executar novamente:
+Se todos os testes continuarem [OK], refatoração concluída.
+
+4.7 Código consolidado ao fim do capítulo
+4.7.1 src/MathUtils.h
+
+#ifndef MATHUTILS_H
+#define MATHUTILS_H
+
+int  Soma(int a, int b);
+bool EhPar(int n);
+
+#endif
+
+4.7.2 src/MathUtils.cpp
+
+#include "MathUtils.h"
+
+int Soma(int a, int b) {
+    return a + b;
+}
+
+bool EhPar(int n) {
+    return (n % 2) == 0;
+}
+
+4.7.3 test/File1.cpp
+
+#include <iostream>
+#include "MathUtils.h"
+
+// Asserções
+void AssertIgual(int esperado, int obtido, const char* nomeTeste) {
+    if (esperado != obtido) {
+        std::cout << "[FALHOU] " << nomeTeste
+                  << " | esperado: " << esperado
+                  << " obtido: "   << obtido << std::endl;
+    } else {
+        std::cout << "[OK]      " << nomeTeste << std::endl;
+    }
+}
+
+void AssertIgualBool(bool esperado, bool obtido, const char* nomeTeste) {
+    if (esperado != obtido) {
+        std::cout << "[FALHOU] " << nomeTeste
+                  << " | esperado: " << esperado
+                  << " obtido: "   << obtido << std::endl;
+    } else {
+        std::cout << "[OK]      " << nomeTeste << std::endl;
+    }
+}
+
+// Testes
+
+void TestaSoma_Basico() {
+    AssertIgual(5, Soma(2, 3), "Soma_DoisMaisTresIgualCinco");
+}
+
+void TestaEhPar() {
+    AssertIgualBool(true,  EhPar(4),  "EhPar_QuatroEhPar");
+    AssertIgualBool(false, EhPar(5),  "EhPar_CincoNaoEhPar");
+    AssertIgualBool(true,  EhPar(0),  "EhPar_ZeroEhPar");
+    AssertIgualBool(true,  EhPar(-2), "EhPar_MenosDoisEhPar");
+    AssertIgualBool(false, EhPar(-3), "EhPar_MenosTresNaoEhPar");
+}
+
+// Runner
+
+int main(int, char**) {
+    std::cout << "Rodando testes..." << std::endl;
+
+    TestaSoma_Basico();
+    TestaEhPar();
+
+    std::cout << "Fim dos testes." << std::endl;
+    std::cout << "Pressione ENTER para sair..." << std::endl;
+    std::cin.get();
+    return 0;
+}
+
+4.8 Exercícios práticos sugeridos
+Para fixar o ciclo TDD, faça:
+
+Exercício 1 – Fatorial(int n)
+Regras:
+Fatorial(0) == 1
+Fatorial(1) == 1
+Fatorial(5) == 120
+Passos:
+Escreva os testes primeiro em File1.cpp (use AssertIgual).
+Só depois crie int Fatorial(int n) em MathUtils.h/.cpp.
+Adicione casos de negativos (ex.: lançar erro ou retornar valor especial) – sempre guiado por testes.
+Exercício 2 – MaximoDeTres(int a, int b, int c)
+Testes:
+Máximo no primeiro, no segundo, no terceiro.
+Três valores iguais.
+Repita o ciclo RED → GREEN → REFACTOR.
+Exercício 3 – Cobertura maior de EhPar
+Adicione testes:
+Números muito grandes (ex.: EhPar(1000000)).
+Combinação com outras funções (ex.: EhPar(Soma(1, 1))).
+4.9 O que você aprendeu neste capítulo
+Como modelar o comportamento desejado em forma de teste.
+Como deixar o compilador “reclamar” de propósito (RED) e só então implementar.
+Como chegar ao estado GREEN com implementação mínima.
+Como refatorar com confiança, porque os testes garantem que você não quebrou nada.
+Como usar o TDD em funções simples, criando o hábito para casos mais complexos.
