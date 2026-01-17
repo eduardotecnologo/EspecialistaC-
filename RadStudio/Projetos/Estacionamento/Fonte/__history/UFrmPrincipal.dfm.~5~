@@ -1,0 +1,30 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Sistema de Estacionamento'
+  ClientHeight = 758
+  ClientWidth = 1371
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  Menu = mnmPrincipal
+  WindowState = wsMaximized
+  TextHeight = 15
+  object mnmPrincipal: TMainMenu
+    Left = 40
+    Top = 32
+    object Arquivo1: TMenuItem
+      Caption = 'Cadastro'
+    end
+    object Processo1: TMenuItem
+      Caption = 'Processo'
+    end
+    object Processo2: TMenuItem
+      Caption = 'Sair'
+    end
+  end
+end

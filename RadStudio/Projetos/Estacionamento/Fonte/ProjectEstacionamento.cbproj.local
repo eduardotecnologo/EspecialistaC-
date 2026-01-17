@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2026/01/16 22:53:22.000.422,=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Project2PCH1.h</Transaction>
+    <Transaction>2026/01/16 22:53:22.000.780,=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Unit1.cpp</Transaction>
+    <Transaction>2026/01/16 22:54:47.000.679,=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Unit1.cpp</Transaction>
+    <Transaction>2026/01/16 22:54:47.000.323,=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Project2PCH1.h</Transaction>
+    <Transaction>2026/01/16 23:11:45.000.749,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Unit1.cpp=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.cpp</Transaction>
+    <Transaction>2026/01/16 23:11:45.000.749,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Unit1.dfm=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.dfm</Transaction>
+    <Transaction>2026/01/16 23:11:45.000.749,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Unit1.h=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.h</Transaction>
+    <Transaction>2026/01/16 23:11:45.000.824,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Project2.cbproj=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\ProjectEstacionamento.cbproj</Transaction>
+    <Transaction>2026/01/16 23:11:45.000.672,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\MeuCursoCPP\Project2PCH1.h=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\ProjectEstacionamentoPCH1.h</Transaction>
+    <Transaction>2026/01/16 23:12:04.000.432,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.dfm=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmPrincipal.dfm</Transaction>
+    <Transaction>2026/01/16 23:12:04.000.432,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.h=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmPrincipal.h</Transaction>
+    <Transaction>2026/01/16 23:12:04.000.432,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.cpp=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmPrincipal.cpp</Transaction>
+    <Transaction>2026/01/17 00:49:01.495,=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.cpp</Transaction>
+    <Transaction>2026/01/17 00:51:33.767,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmModeloCadastro.cpp=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.cpp</Transaction>
+    <Transaction>2026/01/17 00:51:33.767,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmModeloCadastro.h=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.h</Transaction>
+    <Transaction>2026/01/17 00:51:33.767,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmModeloCadastro.dfm=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.dfm</Transaction>
+    <Transaction>2026/01/17 01:01:26.539,=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.cpp</Transaction>
+    <Transaction>2026/01/17 01:05:09.224,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmCadastroCondutor.cpp=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.cpp</Transaction>
+    <Transaction>2026/01/17 01:05:09.224,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmCadastroCondutor.dfm=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.dfm</Transaction>
+    <Transaction>2026/01/17 01:05:09.224,C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\UFrmCadastroCondutor.h=C:\Users\EduDevWin\Documents\GIT\EspecialistaC-\RadStudio\Projetos\Estacionamento\Fonte\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

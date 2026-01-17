@@ -1,0 +1,69 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Sistema de Estacionamento'
+  ClientHeight = 758
+  ClientWidth = 1254
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  FormStyle = fsMDIForm
+  Menu = mnmPrincipal
+  WindowState = wsMaximized
+  TextHeight = 15
+  object mnmPrincipal: TMainMenu
+    Left = 96
+    Top = 32
+    object Arquivo1: TMenuItem
+      Caption = 'Cadastro'
+      object Condutor1: TMenuItem
+        Caption = 'Condutor...'
+        OnClick = EvAtivarCadastroCondutorClick
+      end
+      object Montadora1: TMenuItem
+        Caption = 'Montadora...'
+      end
+      object Montadora2: TMenuItem
+        Caption = 'Modelo...'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Veculo1: TMenuItem
+        Caption = 'Ve'#237'culo...'
+      end
+      object Veculo2: TMenuItem
+        Caption = 'Tipo...'
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object N3: TMenuItem
+        Caption = 'Sair'
+        OnClick = EvEncerrarSistemaClick
+      end
+    end
+    object Processo1: TMenuItem
+      Caption = 'Processo'
+      object icket1: TMenuItem
+        Caption = 'Ticket...'
+        ShortCut = 16468
+      end
+    end
+    object Processo2: TMenuItem
+      Caption = 'Relat'#243'rio'
+      object Veculo3: TMenuItem
+        Caption = 'Ve'#237'culo...'
+      end
+      object Permanncia1: TMenuItem
+        Caption = 'Perman'#234'ncia...'
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+    end
+  end
+end
