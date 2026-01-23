@@ -194,6 +194,30 @@
             <DependentOn>UFrmCadastroCondutor.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
+        <CppCompile Include="UFrmCadastroDeModelo.cpp">
+            <Form>FrmCadastroDeModelo</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmCadastroDeModelo.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="UFrmCadastroMontadora.cpp">
+            <Form>FrmCadastroMontadora</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmCadastroMontadora.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="UFrmCadastroTipo.cpp">
+            <Form>FrmCadastroTipo</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmCadastroTipo.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="UFrmCadastroVeiculo.cpp">
+            <Form>FrmCadastroVeiculo</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>UFrmCadastroVeiculo.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
+        </CppCompile>
         <CppCompile Include="UFrmModeloCadastro.cpp">
             <Form>FrmModeloCadastro</Form>
             <FormType>dfm</FormType>
@@ -209,6 +233,10 @@
         <FormResources Include="UFrmPrincipal.dfm"/>
         <FormResources Include="UFrmModeloCadastro.dfm"/>
         <FormResources Include="UFrmCadastroCondutor.dfm"/>
+        <FormResources Include="UFrmCadastroMontadora.dfm"/>
+        <FormResources Include="UFrmCadastroDeModelo.dfm"/>
+        <FormResources Include="UFrmCadastroVeiculo.dfm"/>
+        <FormResources Include="UFrmCadastroTipo.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

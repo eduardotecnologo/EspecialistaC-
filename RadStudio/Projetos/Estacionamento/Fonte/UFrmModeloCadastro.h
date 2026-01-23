@@ -7,11 +7,26 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ToolWin.hpp>
 //---------------------------------------------------------------------------
 class TFrmModeloCadastro : public TForm
 {
 __published:	// IDE-managed Components
+	TToolBar *tlbToolbarCadastroModelo;
+	TToolButton *btnCriar;
+	TToolButton *ToolButton1;
+	TToolButton *btnPesquisar;
+	TToolButton *ToolButton2;
+	TToolButton *btnGravar;
+	TToolButton *ToolButton3;
+	TToolButton *btnExcluir;
+	TToolButton *ToolButton4;
+	TToolButton *btnCancelar;
+	TToolButton *ToolButton5;
+	TToolButton *btnSair;
 	void __fastcall EvFecharFormularioClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall EvSairFormulario(TObject *Sender);
 
 private:	// User declarations
 public:		// User declarations

@@ -30,6 +30,11 @@ __published:	// IDE-managed Components
 	TMenuItem *Permanncia1;
 	void __fastcall EvEncerrarSistemaClick(TObject *Sender);
 	void __fastcall EvAtivarCadastroCondutorClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroMontadorClick(TObject *Sender);
+	void __fastcall EvCadastroVeiculoClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroTipoClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroModeloClick(TObject *Sender);
+	void __fastcall EvSair(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TfrmPrincipal(TComponent* Owner);

@@ -5,6 +5,10 @@
 
 #include "UFrmPrincipal.h"
 #include "UFrmCadastroCondutor.h"
+#include "UFrmCadastroMontadora.h"
+#include "UFrmCadastroDeModelo.h"
+#include "UFrmCadastroVeiculo.h"
+#include "UFrmCadastroTipo.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -24,6 +28,42 @@ void __fastcall TfrmPrincipal::EvEncerrarSistemaClick(TObject *Sender)
 void __fastcall TfrmPrincipal::EvAtivarCadastroCondutorClick(TObject *Sender)
 {
 	new TFrmCadastroCondutor(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmPrincipal::EvAtivarCadastroMontadorClick(TObject *Sender)
+{
+   new TFrmCadastroMontadora(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmPrincipal::EvCadastroVeiculoClick(TObject *Sender)
+{
+   new TFrmCadastroVeiculo(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmPrincipal::EvAtivarCadastroTipoClick(TObject *Sender)
+{
+   new TFrmCadastroTipo(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmPrincipal::EvAtivarCadastroModeloClick(TObject *Sender)
+{
+    new TFrmCadastroDeModelo(this);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfrmPrincipal::EvSair(TObject *Sender)
+{
+   if(MessageDlg("Deseja realmente sair do Sistema?",
+   mtConfirmation,
+   TMsgDlgButtons() << mbYes << mbNo,
+   0) == mrYes)
+   {
+        Close();
+   }
 }
 //---------------------------------------------------------------------------
 
